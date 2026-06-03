@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Outfit, Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import ClientProviders from "@/components/ClientProviders";
 
-const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit", display: "swap" });
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const poppins = Poppins({ 
+  weight: ["300", "400", "500", "600", "700", "800"],
+  subsets: ["latin"], 
+  variable: "--font-poppins", 
+  display: "swap" 
+});
 
 export const metadata: Metadata = {
   title: "DapurKita — Resep & Kuliner Indonesia",
@@ -15,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id">
-      <body className={`${outfit.variable} ${inter.variable}`}>
+      <body className={`${poppins.variable} ${poppins.className}`}>
         <ClientProviders>{children}</ClientProviders>
       </body>
     </html>

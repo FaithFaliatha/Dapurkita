@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-outfit: "Outfit", sans-serif;
-  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Outfit", sans-serif;
+  --font-poppins: "Inter", sans-serif;
 }
 
 :root {
@@ -32,16 +32,16 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   background: var(--cream);
   color: var(--text-primary);
   line-height: 1.6;
   min-height: 100vh;
 }
-h1,h2,h3,h4,h5,h6 { font-family: var(--font-outfit); font-weight: 700; line-height: 1.2; }
+h1,h2,h3,h4,h5,h6 { font-family: var(--font-poppins); font-weight: 700; line-height: 1.2; }
 a { text-decoration: none; color: inherit; }
 img { max-width: 100%; display: block; }
-button { cursor: pointer; border: none; font-family: var(--font-inter); }
+button { cursor: pointer; border: none; font-family: var(--font-poppins); }
 
 /* ========== NAVBAR ========== */
 .navbar {
@@ -57,7 +57,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
 }
 .navbar-logo {
   display: flex; align-items: center; gap: 8px;
-  font-family: var(--font-outfit); font-size: 1.5rem; font-weight: 800;
+  font-family: var(--font-poppins); font-size: 1.5rem; font-weight: 800;
   background: linear-gradient(135deg, var(--orange-500), var(--amber-500));
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
 }
@@ -195,7 +195,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
 .product-card-content h3 { font-size: 1.05rem; margin-bottom: 6px; }
 .product-card-content p { color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 12px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .product-card-footer { display: flex; align-items: center; justify-content: space-between; }
-.product-price { font-family: var(--font-outfit); font-size: 1.15rem; font-weight: 700; color: var(--orange-600); }
+.product-price { font-family: var(--font-poppins); font-size: 1.15rem; font-weight: 700; color: var(--orange-600); }
 .add-to-cart-btn {
   display: flex; align-items: center; gap: 6px;
   padding: 8px 16px; border-radius: 10px; font-size: 0.85rem; font-weight: 600;
@@ -314,7 +314,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
 /* ========== FOOTER ========== */
 .footer { background: var(--text-primary); color: #fff; padding: 60px 24px 0; margin-top: 80px; }
 .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; padding-bottom: 40px; }
-.footer-logo { display: flex; align-items: center; gap: 8px; font-family: var(--font-outfit); font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; color: var(--orange-400); }
+.footer-logo { display: flex; align-items: center; gap: 8px; font-family: var(--font-poppins); font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; color: var(--orange-400); }
 .footer-brand p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }
 .footer-links h4, .footer-contact h4 { font-size: 0.95rem; margin-bottom: 16px; color: var(--orange-300); }
 .footer-links a { display: block; color: var(--text-muted); font-size: 0.9rem; padding: 4px 0; transition: var(--transition); }
@@ -339,7 +339,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
   background: var(--card-bg); border-radius: var(--radius); padding: 24px; text-align: center;
   box-shadow: var(--card-shadow); border: 1px solid var(--orange-100);
 }
-.stat-card .stat-num { font-family: var(--font-outfit); font-size: 2rem; font-weight: 800; color: var(--orange-500); }
+.stat-card .stat-num { font-family: var(--font-poppins); font-size: 2rem; font-weight: 800; color: var(--orange-500); }
 .stat-card .stat-label { font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px; }
 
 @media (max-width: 640px) { .stats-bar { grid-template-columns: repeat(2, 1fr); } }
@@ -370,7 +370,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
 .search-bar input {
   width: 100%; padding: 14px 20px 14px 48px; border-radius: 50px;
   border: 1px solid var(--orange-200); background: var(--card-bg);
-  font-size: 0.95rem; font-family: var(--font-inter);
+  font-size: 0.95rem; font-family: var(--font-poppins);
   transition: var(--transition); outline: none;
 }
 .search-bar input:focus { border-color: var(--orange-400); box-shadow: 0 0 0 3px rgba(249,115,22,0.1); }
@@ -448,7 +448,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
 .auth-brand > div { position: relative; }
 .auth-brand-logo {
   display: flex; align-items: center; gap: 10px;
-  font-family: var(--font-outfit); font-size: 1.6rem; font-weight: 800;
+  font-family: var(--font-poppins); font-size: 1.6rem; font-weight: 800;
   margin-bottom: 24px;
 }
 .auth-brand h1 { font-size: 1.8rem; margin-bottom: 12px; line-height: 1.3; }
@@ -477,7 +477,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
 .auth-input-icon { position: absolute; left: 14px; color: var(--text-muted); pointer-events: none; }
 .auth-input-wrap input {
   width: 100%; padding: 13px 14px 13px 44px; border: none; background: transparent;
-  font-size: 0.95rem; font-family: var(--font-inter); outline: none; border-radius: 12px;
+  font-size: 0.95rem; font-family: var(--font-poppins); outline: none; border-radius: 12px;
 }
 .auth-password-toggle {
   position: absolute; right: 12px; padding: 4px; background: transparent;
@@ -519,7 +519,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
 .auth-demo-hint p { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 4px; }
 .auth-demo-hint code {
   font-size: 0.85rem; font-weight: 600; color: var(--orange-600);
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
 }
 
 @media (max-width: 768px) {
@@ -605,7 +605,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
   background: var(--card-bg); border-radius: var(--radius); box-shadow: var(--card-shadow);
 }
 .admin-stat-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; }
-.admin-stat-value { font-family: var(--font-outfit); font-size: 1.8rem; font-weight: 800; display: block; }
+.admin-stat-value { font-family: var(--font-poppins); font-size: 1.8rem; font-weight: 800; display: block; }
 .admin-stat-label { font-size: 0.8rem; color: var(--text-muted); }
 .admin-quick-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .admin-quick-card { background: var(--card-bg); border-radius: var(--radius); padding: 24px; box-shadow: var(--card-shadow); }
@@ -632,7 +632,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
 .admin-table td { padding: 12px 16px; border-bottom: 1px solid #f1f5f9; vertical-align: middle; }
 .admin-table tr:hover td { background: var(--orange-50); }
 .admin-table-img { width: 48px; height: 36px; border-radius: 8px; object-fit: cover; }
-.admin-price { font-weight: 700; color: var(--orange-600); font-family: var(--font-outfit); }
+.admin-price { font-weight: 700; color: var(--orange-600); font-family: var(--font-poppins); }
 .admin-badge {
   display: inline-block; padding: 3px 10px; border-radius: 50px; font-size: 0.75rem; font-weight: 600;
   background: var(--orange-50); color: var(--orange-600);
@@ -683,7 +683,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
 }
 .admin-navbar-logo {
   display: flex; align-items: center; gap: 8px;
-  font-family: var(--font-outfit); font-size: 1.25rem; font-weight: 800;
+  font-family: var(--font-poppins); font-size: 1.25rem; font-weight: 800;
   color: #fff;
 }
 .admin-navbar-logo svg { color: var(--orange-400); }
@@ -802,7 +802,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
 .checkout-item-info { flex: 1; }
 .checkout-item-info strong { font-size: 0.85rem; display: block; }
 .checkout-item-info span { font-size: 0.75rem; color: var(--text-muted); }
-.checkout-item-subtotal { font-weight: 700; color: var(--orange-600); font-size: 0.9rem; font-family: var(--font-outfit); }
+.checkout-item-subtotal { font-weight: 700; color: var(--orange-600); font-size: 0.9rem; font-family: var(--font-poppins); }
 
 /* Inputs */
 .checkout-input {
@@ -828,7 +828,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
   display: flex; justify-content: space-between; padding: 12px 0 0;
   margin-top: 8px; border-top: 2px solid var(--orange-200);
   font-size: 1.1rem; font-weight: 800; color: var(--text-primary);
-  font-family: var(--font-outfit);
+  font-family: var(--font-poppins);
 }
 
 /* Payment methods */
@@ -874,7 +874,7 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
   display: flex; justify-content: space-between;
   padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.06); font-size: 0.9rem;
 }
-.checkout-confirm-total { font-size: 1.1rem; color: var(--orange-600); font-family: var(--font-outfit); }
+.checkout-confirm-total { font-size: 1.1rem; color: var(--orange-600); font-family: var(--font-poppins); }
 .checkout-va-box {
   margin-top: 16px; background: #fff; border-radius: 12px; padding: 14px;
   text-align: left;
@@ -1022,10 +1022,10 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
   background: #fff; border: 1px solid #e2e8f0; border-radius: 8px;
   padding: 24px; margin: 24px auto; max-width: 400px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); text-align: left;
-  font-family: var(--font-inter), monospace; color: #1e293b;
+  font-family: var(--font-poppins), monospace; color: #1e293b;
 }
 .receipt-header { text-align: center; margin-bottom: 20px; }
-.receipt-header h2 { font-family: var(--font-outfit); font-size: 1.5rem; color: var(--orange-600); margin: 0; }
+.receipt-header h2 { font-family: var(--font-poppins); font-size: 1.5rem; color: var(--orange-600); margin: 0; }
 .receipt-header p { font-size: 0.85rem; color: #64748b; margin: 4px 0 0; text-transform: uppercase; letter-spacing: 1px; }
 .receipt-info { font-size: 0.85rem; display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
 .receipt-info span { color: #64748b; display: inline-block; width: 90px; }
