@@ -280,8 +280,21 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
 
 /* ========== ABOUT PAGE ========== */
 .about-hero {
-  background: linear-gradient(135deg, var(--orange-500), var(--amber-400));
+  position: relative;
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
   padding: 80px 24px; text-align: center; color: #fff;
+}
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Overlay */
+}
+.about-hero > * {
+  position: relative;
+  z-index: 2;
 }
 .about-hero h1 { font-size: 2.8rem; margin-bottom: 16px; }
 .about-hero p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
@@ -333,8 +346,21 @@ button { cursor: pointer; border: none; font-family: var(--font-inter); }
 
 /* ========== PAGE HEADER ========== */
 .page-header {
-  background: linear-gradient(135deg, var(--orange-500), var(--amber-400));
-  padding: 60px 24px; text-align: center; color: #fff;
+  position: relative;
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 24px; text-align: center; color: #fff;
+}
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Overlay */
+}
+.page-header > * {
+  position: relative;
+  z-index: 2;
 }
 .page-header h1 { font-size: 2.4rem; margin-bottom: 8px; }
 .page-header p { opacity: 0.9; font-size: 1.05rem; }

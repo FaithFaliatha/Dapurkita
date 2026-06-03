@@ -47,7 +47,10 @@ export default function ResepPage() {
 
   return (
     <>
-      <div className="page-header">
+      <div 
+        className="page-header" 
+        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1920&auto=format&fit=crop')` }}
+      >
         <h1>{t("Kumpulan Resep", "Recipe Collection")}</h1>
         <p>{t("Temukan resep favoritmu dengan video tutorial", "Find your favorite recipe with video tutorials")}</p>
       </div>

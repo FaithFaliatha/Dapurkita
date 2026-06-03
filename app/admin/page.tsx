@@ -274,8 +274,14 @@ export default function AdminPage() {
         setLoading(false);
       }
     }
-    loadData();
-  }, []);
+    
+    // Only load admin data if user is an admin
+    if (user && user.role === "admin") {
+      loadData();
+    } else {
+      setLoading(false);
+    }
+  }, [user]);
 
   // Redirect non-admin users
   if (!user || user.role !== "admin") {

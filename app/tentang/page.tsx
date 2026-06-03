@@ -32,7 +32,10 @@ export default function TentangPage() {
 
   return (
     <>
-      <div className="about-hero">
+      <div 
+        className="about-hero"
+        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1505253758473-96b7015fcd40?q=80&w=1920&auto=format&fit=crop')` }}
+      >
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <h1>{t("Tentang DapurKita", "About DapurKita")}</h1>
           <p>{t("Dari dapur kami, untuk meja makan Anda", "From our kitchen, to your dining table")}</p>

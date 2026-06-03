@@ -57,7 +57,10 @@ function MenuContent() {
 
   return (
     <>
-      <div className="page-header">
+      <div 
+        className="page-header"
+        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1920&auto=format&fit=crop')` }}
+      >
         <h1>{t("Menu Kami", "Our Menu")}</h1>
         <p>{t("Pesan makanan lezat langsung dari dapur kami", "Order delicious food straight from our kitchen")}</p>
       </div>
