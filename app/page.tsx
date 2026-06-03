@@ -6,7 +6,7 @@ import { useLang } from "@/context/LanguageContext";
 import type { Product, Recipe } from "@/lib/api";
 import { getMenus, getRecipes, mapAPIMenuToProduct, mapAPIRecipeToRecipe } from "@/lib/api";
 import { AnimatePresence, motion } from "framer-motion";
-import { BookOpen, ChefHat, ShoppingBag, Star, Users, Utensils } from "lucide-react";
+import { BookOpen, ChefHat, ShoppingBag, Star, Users, Utensils, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -159,6 +159,7 @@ export default function HomePage() {
             { icon: <Utensils size={32} />, title: t("Resep Autentik", "Authentic Recipes"), desc: t("Resep turun-temurun dari berbagai daerah Indonesia", "Heritage recipes from various Indonesian regions") },
             { icon: <ChefHat size={32} />, title: t("Chef Berpengalaman", "Experienced Chefs"), desc: t("Dimasak oleh chef profesional dengan bahan pilihan", "Prepared by professional chefs with selected ingredients") },
             { icon: <Users size={32} />, title: t("Komunitas Aktif", "Active Community"), desc: t("Bergabung dengan ribuan pecinta kuliner Indonesia", "Join thousands of Indonesian food enthusiasts") },
+            { icon: <ShieldCheck size={32} />, title: t("Kualitas Terjamin", "Guaranteed Quality"), desc: t("Bahan segar setiap hari dan terjamin kebersihannya", "Fresh ingredients everyday with guaranteed hygiene") },
           ].map((val, i) => (
             <motion.div
               key={i}
